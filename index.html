@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+
+
+    <!-- Start screen -->
+     <div id="str" >
+    <div id="start-screen">
+      <h2>Select Number of Rounds</h2>
+      <input type="number" id="round" min="1" max="10">
+      <div id="round-value">5</div> rounds
+      <br>
+      <button id="startbtn">Start Game</button>
+    </div>
+     </div>
+
+<!-- game screen -->
+ <div id="gamescreen" style="display:none;">
+    <h1 id="heading" >Stone Paper Scissor Game</h1>
+    <div id="container">
+        <div class="container" id="rock">  
+            <img src="rock.png" >
+        </div>
+        <div class="container" id="paper">
+            <img src="paper.png">
+        </div>
+        <div class="container" id="scissor">
+            <img src="scissor.png">
+        </div>
+
+    </div>
+    <div id="score">
+        <div class="score-card">
+            <p id="yourscore">0</p>
+            <p>You</p>
+        </div>
+        <div class="score-card">
+            <p id="computerscore">0</p>
+            <p>Computer</p>
+        </div>
+    </div>
+    <div id="match">
+        Pick up you choice
+    </div>
+</div>
+
+<!-- winner screen -->
+<div id="winnerscreen"  style="display:none;">
+<h1 id="winhead"></h1>
+<div id="score1">
+    <h3 class="scoreheadu">You</h3>
+    <h4 id="yourfinal" class="scoreheadu"></h4>
+</div>
+<div id="score2">
+    <h3 class="scoreheadc" >Computer</h3>
+    <h4 id="compfinal" class="scoreheadc"></h4>
+</div>
+<button id="playagain">Play Again</button>
+</div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
